@@ -1,0 +1,74 @@
+.game {
+	display: flex;
+}
+
+.game .Buttons {
+	display: block;
+	margin-left: 35%;
+	margin-top: -5%;
+}
+
+.game #timer {
+	position: absolute;
+	/* margin-left: 0.5%;
+	margin-top: 50%; */
+	top: 75%;
+	left: 52%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+
+	font-size: 35px;
+	opacity: 0;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.Pong img {
+	margin-left: 33.5%;
+}
+
+.customization {
+	border-style: solid;
+	border-width: 0.2vw;
+	border-color: white;
+	border-radius: 1vw;
+	width: 15%;
+	height: 50vh;
+	position: absolute;
+	top: 25%;
+	right: 5%;
+}
+
+.customization .stackButton {
+	width: 80%;
+	margin: 5% 0 0 10%;
+}
+
+.ball {
+	--x: 60;
+	--y: 50;
+
+	position: absolute;
+	background-color: var(--colorContent);
+	left: calc(var(--x) * 1%);
+	top: calc(var(--y) * 1%);
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	width: 3vh;
+	height: 3vh;
+	transition: 10ms;
+}
+
+.map {
+	--x: 65;
+	--y: 50;
+
+	position: absolute;
+	background-color: var(--colorContent);
+	left: calc(var(--x) * 1%);
+	top: calc(var(--y) * 1%);
+	/* border-radius: 50%; */
+	transform: translate(-50%, -50%);
+	width: 7vh;
+	height: 5vh;
+	transition: 10ms;
+}

@@ -1,0 +1,275 @@
+.container {
+  display: block;
+  /* border-style: solid;
+  border-width: 0.3vw;
+  border-color: pink; */
+  /* justify-content: space-evenly; */
+}
+
+.container .header {
+  /* border-style: solid;
+  border-width: 0.3vw;
+  border-color: red; */
+  margin: 0 0 0 20%;
+}
+
+.searchChannels {
+  margin-top: 1%;
+  margin-left: 0%;
+  width: 55%;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  box-sizing: content-box;
+}
+
+.searchChannels .dropdown {
+  display: none;
+}
+
+.searchChannels .search:focus-within .dropdown {
+  position: absolute;
+  background-color: #e0e0e0;
+  display: block;
+}
+
+.chatAndChannels {
+  display: flex;
+  /* border-style: solid;
+  border-width: 0.3vw;
+  border-color: blue; */
+
+  margin: 0 0 0 20%;
+}
+
+.chat {
+  margin-top: 1%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0px;
+
+  border-radius: 15px;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  background-color: rgba(18, 17, 17, 0.671);
+
+  width: 68%;
+  height: 85vh;
+}
+
+.chatHistory {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column-reverse;
+  height: 85%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: grey darkgrey;
+  scrollbar-gutter: stable both-edges;
+
+  margin-top: 2%;
+  margin-left: 1%;
+
+  border-radius: 5px;
+}
+
+.chatAvatar {
+  width: 5%;
+}
+
+.boxModalProfile {
+  position: absolute;
+  display: block;
+  margin: 10% 0 0 25%;
+  width: 50%;
+  height: 50%;
+  background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700442162.jpg);
+  border-radius: 2vw;
+  border-style: solid;
+  border-color: rgb(43, 35, 35);
+  border-width: 0.5vw;
+  align-items: baseline;
+}
+
+.boxButtonsOwner {
+  margin: 5% 0 0 17%;
+}
+
+.boxButtons {
+  margin: 10% 0 0 25%;
+}
+
+.dropdownButtonMute {
+  position: absolute;
+  width: 5vw;
+  transform: translate(152%, 170%);
+}
+
+.dropdownButtonBan {
+  position: absolute;
+  width: 5vw;
+  transform: translate(374%, 170%);
+}
+
+.boxModalDuel {
+  position: absolute;
+  display: block;
+  margin: 10% 0 0 25%;
+  width: 50%;
+  height: 50%;
+  background-color: var(--colorBackground);
+  border-radius: 2vw;
+  border-style: solid;
+  border-color: rgb(43, 35, 35);
+  border-width: 0.5vw;
+  align-items: baseline;
+}
+
+.loader {
+  margin: 15% 0 0 45%;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid var(--colorContent); /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.chatHistory .singleMessage {
+  color: black;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 5px;
+  background-color: rgb(232, 232, 232);
+  scroll-behavior: initial;
+
+  margin-right: 3%;
+  margin-top: 0%;
+  overflow-wrap: break-word;
+}
+
+.chatBar {
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 95%;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+}
+
+.myChats {
+  margin: 1% 1% 0 2%;
+
+  border-radius: 15px;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  background-color: rgba(240, 234, 234, 0.671);
+
+  width: 30%;
+  height: 85vh;
+}
+
+.myChats .myChatsHeader {
+  display: flex;
+}
+
+.myChats h1 {
+  color: black;
+  margin: 2% 0 0 3%;
+}
+
+.myChats .button > div {
+  margin-left: 25%;
+  margin-top: 5%;
+
+  /* padding: 15px 30px; */
+  color: white;
+  border-color: white;
+  background-color: black;
+}
+
+.myChats .button #buttonCreateChannel {
+  width: 9vw;
+  font-size: 0.8vw;
+  padding: 5% 5% 5% 5%;
+}
+
+.myChats .trucblanc {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 4%;
+  margin-right: 0%;
+
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: grey darkgrey;
+  scrollbar-gutter: auto;
+
+  border-radius: 15px;
+  border-width: 3px;
+  background-color: rgba(18, 17, 17, 0.671);
+
+  width: 92%;
+  height: 72vh;
+}
+
+.myChats .trucblanc .flex {
+  color: black;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(232, 232, 232);
+
+  margin-top: 5%;
+  margin-left: 5%;
+  height: 8vh;
+  cursor: pointer;
+}
+
+.myChats .trucblanc h1 {
+  font-size: 25px;
+  padding: 5px;
+}
+
+.myChats .trucblanc p {
+  margin-left: 4%;
+  margin-top: -2%;
+}
+
+.myChats .buttonQuitChannel {
+  margin: -10% 0 0 80%;
+}
+
+.modal {
+  background-color: grey;
+  border-radius: 5px;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 1%;
+}
+
+.modal .boxModal {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .create {
+  color: white;
+  border-color: white;
+  background-color: black;
+  width: 6vw;
+  height: 5vh;
+  align-self: center;
+  padding: 3.5% 5% 5% 6%;
+}

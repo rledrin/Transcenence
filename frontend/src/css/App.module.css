@@ -1,0 +1,13 @@
+.boxModalDuelAccept {
+  position: absolute;
+  display: block;
+  margin: 10% 0 0 25%;
+  width: 50%;
+  height: 50%;
+  background-color: var(--colorBackground);
+  border-radius: 2vw;
+  border-style: solid;
+  border-color: rgb(43, 35, 35);
+  border-width: 0.5vw;
+  align-items: baseline;
+}
